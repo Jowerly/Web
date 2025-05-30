@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.encabezado {
+    background-color: #111820;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+.logo {
+    height: 50px;
+    margin-left: 20px;
+}
+.menu {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #111820;
+}
+.list_menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+}
+.list_item {
+    color: white;
+    font-size: 32px;
+}
+.list_item a {
+    color: white;
+    text-decoration: none;
+}
+.list_item a:hover {
+    color: blanchedalmond;
+    opacity: 0.7;
+    transition: ease-in 0.3s;
+}
+.blog_fondo{
+    height: 1300px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.blog_img{
+    object-fit: cover;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    filter: brightness(70%);
+}
+.blog_fondo h1 {
+    z-index: 1;
+    color: white;
+    position: relative;
+    left: 20%;
+    bottom: 15%;
+    font-size: 56px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+}
+.contenedor_articles {
+  width: 80%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px 36px;
+}
+
+.card_article {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+
+.card_article:hover {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+.anotaciones {
+    font-size: 24px;
+}
+.card_tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #131a20;
+  color: #fff;
+  font-size: 0.93em;
+  font-family: 'Montserrat', Arial, sans-serif;
+  padding: 4px 14px;
+  border-radius: 3px;
+  z-index: 2;
+  letter-spacing: 0.2px;
+}
+
+.card_article img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+}
+
+.card_title {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #232323;
+  margin: 22px 16px 18px 16px;
+  line-height: 1.26;
+}
+
+@media (max-width: 1000px) {
+  .contenedor_articles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .contenedor_articles {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+}
+.footer-altomayo {
+  background: #131a20;
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  padding: 0;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 16px 20px 16px;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+  min-width: 210px;
+}
+
+.footer-brand {
+  flex: 1 1 200px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 65px;
+  margin-bottom: 12px;
+}
+
+.footer-brand-text {
+  margin-bottom: 18px;
+  font-size: 1em;
+}
+
+.footer-social {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 36px;
+  height: 36px;
+  color: #fff;
+  font-size: 1.2em;
+  margin-right: 0;
+  transition: background 0.2s, color 0.2s;
+}
+.footer-social a:hover {
+  background: #a4844a;
+  color: #fff;
+  border-color: #a4844a;
+}
+
+/* Social Icons (Font Awesome or custom SVG) */
+.icon-facebook:before { content: '\f09a'; font-family: "FontAwesome"; }
+.icon-instagram:before { content: '\f16d'; font-family: "FontAwesome"; }
+.icon-tiktok:before { content: '\e07b'; font-family: "FontAwesome"; }
+.icon-youtube:before { content: '\f167'; font-family: "FontAwesome"; }
+.icon-mail:before { content: '\f1d8'; font-family: "FontAwesome"; }
+
+/* Coffee Icon for list items (use your own SVG or Unicode coffee bean) */
+.icon-coffee:before {
+  content: '☕';
+  color: #a4844a;
+  font-size: 1em;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* List styles */
+.footer-col h4 {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-col ul li {
+  margin-bottom: 10px;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.footer-subscribe-text {
+  margin-bottom: 10px;
+  font-size: 0.96em;
+}
+
+.footer-subscribe-form {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 320px;
+  margin-top: 6px;
+}
+.footer-subscribe-form input[type="email"] {
+  padding: 10px 12px;
+  border: none;
+  outline: none;
+  width: 200px;
+  font-size: 1em;
+  color: #222;
+}
+.footer-subscribe-form button {
+  background: #a4844a;
+  color: #fff;
+  border: none;
+  padding: 0 18px;
+  font-size: 1.2em;
+  height: 38px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+}
+.footer-subscribe-form button:hover {
+  background: #c6a25a;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  border-top: 1px solid #38404a;
+  margin-top: 20px;
+  padding: 15px 16px 8px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1em;
+  color: #d6d6d6;
+}
+.footer-dev a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+  .footer-content {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .footer-col {
+    min-width: 200px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
