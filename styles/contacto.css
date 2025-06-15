@@ -110,7 +110,7 @@ section {
     position: relative;
     left: 43.9%;
     bottom: 30%;
-    background: repeating-linear-gradient(to left , rgba(255,255,255,0.7), rgba(204, 36, 36, 0.37)),url(/Assets/29_cafe-instantaneo-altomayo_2-768x1151.jpg.webp) center;
+    background: repeating-linear-gradient(to left , rgba(255,255,255,0.7), rgba(204, 36, 36, 0.37)),url(../Assets/29_cafe-instantaneo-altomayo_2-768x1151.jpg.webp) center;
   
   }
 .contenedor_img > img {
