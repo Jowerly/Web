@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recetas de café fáciles de preparar con SAYRI PERU.">
+  <title>Recetas | SAYRI PERU</title>
+  <link rel="stylesheet" href="styles/recetas.css">
+  <link rel="stylesheet" href="styles/interactions.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/433f21479a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="encabezado">
+    <nav class="menu" aria-label="Navegación principal">
+      <ul class="list_menu">
+        <li class="marca"><a href="index.html">SAYRI <span>PERU</span></a></li>
+        <li class="list_item"><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+        <li class="list_item"><a href="nosotros.html"><i class="fa-solid fa-users"></i>Nosotros</a></li>
+        <li class="list_item"><a href="recetas.html" aria-current="page"><i class="fa-solid fa-mug-hot"></i>Recetas</a></li>
+        <li class="list_item"><a href="videos.html"><i class="fa-solid fa-lightbulb"></i>Experiencias</a></li>
+        <li class="list_item"><a href="contacto.html"><i class="fa-solid fa-envelope"></i>Contacto</a></li>
+      </ul>
+      <input class="menu-toggle" type="checkbox" id="menu-movil-toggle" aria-label="Abrir o cerrar el menú">
+      <label class="menu-toggle-button" for="menu-movil-toggle" aria-expanded="false"><span class="menu-icono" aria-hidden="true">☰</span></label>
+      <label class="menu-overlay" for="menu-movil-toggle" aria-hidden="true"></label>
+      <ul class="menu-movil-lista">
+        <li class="list_item"><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+        <li class="list_item"><a href="nosotros.html"><i class="fa-solid fa-users"></i>Nosotros</a></li>
+        <li class="list_item"><a href="recetas.html" aria-current="page"><i class="fa-solid fa-mug-hot"></i>Recetas</a></li>
+        <li class="list_item"><a href="videos.html"><i class="fa-solid fa-lightbulb"></i>Experiencias</a></li>
+        <li class="list_item"><a href="contacto.html"><i class="fa-solid fa-envelope"></i>Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main class="contenedor">
+    <section class="blog_fondo" aria-labelledby="titulo-recetas">
+      <img class="blog_img" src="Assets/MUJER-CAFE-scaled.jpg" alt="Persona disfrutando una taza de café">
+      <div class="titulo-recetas"><p>Ideas para preparar</p><h1 id="titulo-recetas">RECETAS SAYRI</h1></div>
+    </section>
+
+    <section class="introduccion-recetas" aria-labelledby="prepara">
+      <h2 id="prepara">Prepara tu momento favorito</h2>
+      <p>Explora las recetas oficiales de la casa o descubre y comparte las creaciones de la comunidad.</p>
+    </section>
+
+    <!-- Pestañas o botones de navegación entre Oficiales y Comunidad -->
+    <div class="recetas-tabs-container">
+      <button type="button" class="tab-btn active" data-tab="oficiales">Recetas Oficiales</button>
+      <button type="button" class="tab-btn" data-tab="comunidad">Recetas de la Comunidad</button>
+    </div>
+
+    <!-- SECCIÓN 1: RECETAS OFICIALES (Buscador general + Grid de oficiales) -->
+    <section class="seccion-recetas active" id="panel-oficiales">
+      <div class="buscador-wrapper">
+        <input type="text" id="buscador-oficiales" placeholder=" Buscar entre las recetas oficiales..." aria-label="Buscar recetas oficiales">
+      </div>
+      <div class="recetas-grid" id="grid-oficiales" aria-label="Lista de recetas oficiales">
+        <!-- JS cargará las oficiales aquí -->
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: RECETAS DE LA COMUNIDAD (Formulario + Grid exclusivo de comunidad) -->
+    <section class="seccion-recetas" id="panel-comunidad" style="display: none;">
+      <div class="gestion-recetas-contenedor">
+        
+        <!-- Buscador exclusivo para la comunidad -->
+        <div class="buscador-wrapper">
+          <input type="text" id="buscador-comunidad" placeholder=" Buscar entre las recetas de la comunidad..." aria-label="Buscar recetas de la comunidad">
+        </div>
+        <!-- Formulario exclusivo visible solo aquí -->
+        <details class="details-nueva-receta">
+          
+          <summary>+ Agregar mi propia receta a la Comunidad</summary>
+          <form id="form-nueva-receta" class="form-nueva-receta">
+            <div class="form-grupo">
+  <label for="recipe-file">Sube una foto:</label>
+  <input type="file" id="recipe-file" accept="image/*">
+</div>
+            <div class="form-grupo">
+              <label for="recipe-title">Título de la receta:</label>
+              <input type="text" id="recipe-title" name="title" required>
+            </div>
+            <div class="form-grupo">
+              <label for="recipe-desc">Descripción corta:</label>
+              <input type="text" id="recipe-desc" name="description" required>
+            </div>
+            <div class="form-fila">
+              <div class="form-grupo">
+                <label for="recipe-cat">Categoría:</label>
+                <input type="text" id="recipe-cat" name="category" value="Comunidad" required>
+              </div>
+              <div class="form-grupo">
+                <label for="recipe-time">Tiempo:</label>
+                <input type="text" id="recipe-time" name="time" value="10 min" required>
+              </div>
+            </div>
+            <button type="submit" class="btn-guardar-receta">Publicar Receta</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </details>
+      </div>
+
+      <div class="recetas-grid" id="grid-comunidad" aria-label="Lista de recetas de la comunidad">
+        <!-- JS cargará las de la comunidad aquí -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-sayri">
+    <div class="footer-content">
+      <div class="footer-col footer-brand"><div class="footer-logo">S</div><div class="footer-brand-text">SAYRI PERU<br><span>Café para compartir</span></div><div class="footer-social"><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a><a href="https://www.YouTube.com/" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></div></div>
+      <div class="footer-col"><h2>Explora</h2><ul><li><a href="index.html">Inicio</a></li><li><a href="recetas.html">Recetas</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+      <div class="footer-col"><h2>Información</h2><ul><li>Política de privacidad</li><li>Política de cookies</li><li>Protección de datos</li><li>Proyecto académico</li></ul></div>
+      <div class="footer-col"><h2>Suscríbete</h2><p>Entérate de las novedades de SAYRI PERU.</p><form class="footer-subscribe-form" action="#"><input type="email" aria-label="Correo electrónico" placeholder="tuemail@correo.com" required><button type="submit" aria-label="Suscribirse">→</button></form></div>
+    </div>
+  </footer>
+  <script src="scripts/app.js" defer></script>
+</body>
+</html>

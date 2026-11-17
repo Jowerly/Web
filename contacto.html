@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de contacto de SAYRI PERU.">
+  <title>Contacto | SAYRI PERU</title>
+  <link rel="stylesheet" href="styles/contacto.css">
+  <link rel="stylesheet" href="styles/interactions.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/433f21479a.js" crossorigin="anonymous"></script></head>
+</head>
+<body>
+  <header class="encabezado">
+    <nav class="menu" aria-label="Navegación principal">
+      <ul class="list_menu">
+        <li class="marca"><a href="index.html">SAYRI <span>PERU</span></a></li>
+        <li class="list_item"><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+        <li class="list_item"><a href="nosotros.html"><i class="fa-solid fa-users"></i>Nosotros</a></li>
+        <li class="list_item"><a href="recetas.html"><i class="fa-solid fa-mug-hot"></i>Recetas</a></li>
+        <li class="list_item"><a href="videos.html"><i class="fa-solid fa-lightbulb"></i>Experiencias</a></li>
+        <li class="list_item"><a href="contacto.html" aria-current="page"><i class="fa-solid fa-envelope"></i>Contacto</a></li>
+      </ul>
+      <input class="menu-toggle" type="checkbox" id="menu-movil-toggle" aria-label="Abrir o cerrar el menú">
+      <label class="menu-toggle-button" for="menu-movil-toggle" aria-expanded="false"><span class="menu-icono" aria-hidden="true">☰</span></label>
+      <label class="menu-overlay" for="menu-movil-toggle" aria-hidden="true"></label>
+      <ul class="menu-movil-lista">
+        <li class="list_item"><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+        <li class="list_item"><a href="nosotros.html"><i class="fa-solid fa-users"></i>Nosotros</a></li>
+        <li class="list_item"><a href="recetas.html"><i class="fa-solid fa-mug-hot"></i>Recetas</a></li>
+        <li class="list_item"><a href="videos.html"><i class="fa-solid fa-lightbulb"></i>Experiencias</a></li>
+        <li class="list_item"><a href="contacto.html" aria-current="page"><i class="fa-solid fa-envelope"></i>Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contacto-hero" aria-labelledby="titulo-contacto"><p>Conversemos</p><h1 id="titulo-contacto">CONTACTO SAYRI PERU</h1><span>Comparte una idea, receta o experiencia alrededor del café.</span></section>
+    <section class="contenedor" aria-label="Información y formulario de contacto">
+      <div class="info-contacto">
+        <table class="tabla">
+          <caption>Información de contacto</caption>
+          <tbody>
+            <tr><th scope="row">Canal</th><td>Formulario de contacto</td></tr>
+            <tr><th scope="row">Alcance</th><td>Comunidad Amante Del Cafe Peruano</td></tr>
+            <tr><th scope="row">Ubicación</th><td>Perú</td></tr>
+          </tbody>
+        </table>
+        <h2>¿Qué puedes compartir?</h2>
+        <table class="tabla2"><tbody><tr><td>Una idea para una receta, una sugerencia para la página o tu forma favorita de preparar café.</td></tr></tbody></table>
+      </div>
+
+      <div class="formContenedor">
+        <form class="formcontacto" action="#" method="post">
+          <h2 id="formulario">Déjanos un comentario</h2>
+          <label for="nombre">Nombre y apellido<input type="text" id="nombre" name="nombre" required></label>
+          <label for="cel">Teléfono<input type="tel" id="cel" name="cel" inputmode="tel"></label>
+          <label for="email">Correo electrónico<input type="email" id="email" name="email" required></label>
+          <label for="tema">Motivo<select id="tema" name="tema" required><option value="">Selecciona una opción</option><option>Consulta general</option><option>Receta o sugerencia</option><option>Experiencia en la página</option></select></label>
+          <label for="mensaje">Mensaje<textarea name="mensaje" id="mensaje" placeholder="Detalla tu experiencia o idea" rows="7" required></textarea></label>
+          <input id="boton" type="submit" value="Enviar">
+        </form>
+      </div>
+    </section>
+
+    <section class="mapa" aria-label="Presentación de SAYRI PERU"><img class="mapa-imagen" src="Assets/edited_d2.png" alt="Presentación de café"><div class="mapa-contenido">
+      <p>UNA PAUSA, UNA TAZA, UNA CONVERSACIÓN</p>
+      <h2>Café para conectar</h2>
+      <span>La experiencia SAYRI PERU se adapta a pantallas grandes y móviles mediante un diseño responsive construido con CSS.</span>
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer-sayri">
+      <div class="footer-content">
+      <div class="footer-col footer-brand"><div class="footer-logo">S</div><div class="footer-brand-text">SAYRI PERU<br><span>Café para compartir</span></div><div class="footer-social"><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a><a href="https://www.YouTube.com/" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></div></div>
+        <div class="footer-col"><h2>Explora</h2><ul><li><a href="index.html">Inicio</a></li><li><a href="recetas.html">Recetas</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+        <div class="footer-col"><h2>Información</h2><ul><li>Política de privacidad</li><li>Política de cookies</li><li>Protección de datos</li><li>Proyecto académico</li></ul></div>
+        <div class="footer-col"><h2>Suscríbete</h2><p>Entérate de las novedades de SAYRI PERU.</p><form class="footer-subscribe-form" action="#"><input type="email" aria-label="Correo electrónico" placeholder="tuemail@correo.com" required><button type="submit" aria-label="Suscribirse">→</button></form></div>
+      </div>
+    </footer>
+  <script src="scripts/app.js" defer></script>
+</body>
+</html>

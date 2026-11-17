@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SAYRI PERU: café, recetas y momentos para compartir.">
+  <title>SAYRI PERU | Inicio</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/interactions.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/433f21479a.js" crossorigin="anonymous"></script></head>
+<body>
+  <header class="encabezado">
+    <nav class="menu" aria-label="Navegación principal">
+      <ul class="list_menu">
+        <li class="marca"><a href="index.html">SAYRI <span>PERU</span></a></li>
+        <li class="list_item"><a href="index.html" aria-current="page"><i class="fa-solid fa-house"></i>Inicio</a></li>
+        <li class="list_item"><a href="nosotros.html"><i class="fa-solid fa-users"></i>Nosotros</a></li>
+        <li class="list_item"><a href="recetas.html"><i class="fa-solid fa-mug-hot"></i>Recetas</a></li>
+        <li class="list_item"><a href="videos.html"><i class="fa-solid fa-lightbulb"></i>Experiencias</a></li>
+        <li class="list_item"><a href="contacto.html"><i class="fa-solid fa-envelope"></i>Contacto</a></li>
+      </ul>
+      <input class="menu-toggle" type="checkbox" id="menu-movil-toggle" aria-label="Abrir o cerrar el menú">
+      <label class="menu-toggle-button" for="menu-movil-toggle" aria-expanded="false"><span class="menu-icono" aria-hidden="true">☰</span></label>
+      <label class="menu-overlay" for="menu-movil-toggle" aria-hidden="true"></label>
+      <ul class="menu-movil-lista">
+        <li class="list_item"><a href="index.html" aria-current="page"><i class="fa-solid fa-house"></i>Inicio</a></li>
+        <li class="list_item"><a href="nosotros.html"><i class="fa-solid fa-users"></i>Nosotros</a></li>
+        <li class="list_item"><a href="recetas.html"><i class="fa-solid fa-mug-hot"></i>Recetas</a></li>
+        <li class="list_item"><a href="videos.html"><i class="fa-solid fa-lightbulb"></i>Experiencias</a></li>
+        <li class="list_item"><a href="contacto.html"><i class="fa-solid fa-envelope"></i>Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section" aria-labelledby="titulo-principal">
+      <img id="fondo" src="Assets/16-Tipos-de-cafe-en-grano_2-2048x1366.jpg.webp" alt="Granos de café tostado">
+      <div class="texto-hero">
+        <p class="eyebrow">Café para compartir</p>
+        <h1 id="titulo-principal">BIENVENIDO A<br>SAYRI PERU</h1>
+        <p>Una propuesta de café para acompañar pausas, ideas y conversaciones que se disfrutan sin prisa.</p>
+        <a class="cta" href="recetas.html">Ver recetas</a>
+      </div>
+    </section>
+
+    <section class="somos-sayri" aria-labelledby="proposito">
+      <h2 id="proposito">CONOCE SAYRI PERU</h2>
+      <p>Nos dirigimos a personas que disfrutan preparar café en casa y descubrir nuevas formas de compartirlo.</p>
+      <div class="tazas-container">
+        <article class="taza">
+          <div class="taza-svg-contenedor">
+            <svg class="taza-svg" viewBox="0 0 220 160" role="img" aria-label="Taza de café con aroma">
+              <path class="svg-steam" d="M75 50c-13-13 11-21 0-35M110 48c-13-13 11-21 0-35M145 50c-13-13 11-21 0-35"/>
+              <path class="svg-cup" d="M42 62h119v38c0 25-20 45-45 45H87c-25 0-45-20-45-45Z"/>
+              <path class="svg-handle" d="M161 77h17c18 0 28 12 28 28s-10 28-28 28h-15"/>
+              <ellipse class="svg-coffee" cx="102" cy="63" rx="59" ry="10"/>
+              <path class="svg-saucer" d="M40 151h136"/>
+            </svg>
+          </div>
+          <h3>Sabor y aroma</h3>
+          <p>Momentos simples que se sienten especiales.</p>
+        </article>
+        <article class="taza">
+          <div class="taza-svg-contenedor">
+            <svg class="taza-svg" viewBox="0 0 220 160" role="img" aria-label="Taza de café y una cuchara">
+              <path class="svg-steam" d="M86 50c-13-13 11-21 0-35M121 48c-13-13 11-21 0-35"/>
+              <path class="svg-cup" d="M42 62h119v38c0 25-20 45-45 45H87c-25 0-45-20-45-45Z"/>
+              <path class="svg-handle" d="M161 77h17c18 0 28 12 28 28s-10 28-28 28h-15"/>
+              <ellipse class="svg-coffee" cx="102" cy="63" rx="59" ry="10"/>
+              <path class="svg-saucer" d="M40 151h136"/>
+              <path class="svg-accent" d="m26 45 24 25M24 42l5-5M45 72l5-5"/>
+            </svg>
+          </div>
+          <h3>Recetas fáciles</h3>
+          <p>Ideas claras para crear una taza a tu manera.</p>
+        </article>
+        <article class="taza">
+          <div class="taza-svg-contenedor">
+            <svg class="taza-svg" viewBox="0 0 220 160" role="img" aria-label="Dos tazas de café para compartir">
+              <path class="svg-steam" d="M70 58c-10-10 8-16 0-27M143 58c-10-10 8-16 0-27"/>
+              <path class="svg-cup" d="M23 70h73v24c0 18-14 32-32 32H55c-18 0-32-14-32-32Z"/>
+              <path class="svg-handle" d="M96 79h10c13 0 20 9 20 20s-7 20-20 20H96"/>
+              <ellipse class="svg-coffee" cx="59" cy="71" rx="36" ry="7"/>
+              <path class="svg-cup" d="M118 70h73v24c0 18-14 32-32 32h-9c-18 0-32-14-32-32Z"/>
+              <path class="svg-handle" d="M191 79h8c13 0 19 9 19 20s-6 20-19 20h-8"/>
+              <ellipse class="svg-coffee" cx="154" cy="71" rx="36" ry="7"/>
+              <path class="svg-saucer" d="M17 142h185"/>
+            </svg>
+          </div>
+          <h3>Para compartir</h3>
+          <p>Una pausa que acerca a amigos y familia.</p>
+        </article>
+        <article class="taza">
+          <div class="taza-svg-contenedor">
+            <svg class="taza-svg" viewBox="0 0 220 160" role="img" aria-label="Taza de café con una hoja">
+              <path class="svg-steam" d="M75 50c-13-13 11-21 0-35M110 48c-13-13 11-21 0-35M145 50c-13-13 11-21 0-35"/>
+              <path class="svg-cup" d="M42 62h119v38c0 25-20 45-45 45H87c-25 0-45-20-45-45Z"/>
+              <path class="svg-handle" d="M161 77h17c18 0 28 12 28 28s-10 28-28 28h-15"/>
+              <ellipse class="svg-coffee" cx="102" cy="63" rx="59" ry="10"/>
+              <path class="svg-saucer" d="M40 151h136"/>
+              <path class="svg-accent" d="M22 83c15-18 31-16 34-3-3 14-19 17-34 3Zm4-1 25-1"/>
+            </svg>
+          </div>
+          <h3>Con identidad</h3>
+          <p>Una experiencia cálida inspirada en el Perú.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="productos" aria-labelledby="experiencia">
+      <video class="producto-video" src="Assets/Secuencia-01_1.mp4" autoplay loop muted playsinline preload="auto" aria-hidden="true"></video>
+      <div class="productos-overlay">
+        <div class="overlay-texto">
+          <p class="eyebrow">Nuestra propuesta</p>
+          <h2 id="experiencia">Un café, muchas formas de disfrutarlo</h2>
+          <p>Explora recetas, combina sabores y encuentra un momento para ti.</p>
+          <a href="recetas.html" class="button">Explorar recetas</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-sayri">
+    <div class="footer-content">
+      <div class="footer-col footer-brand"><div class="footer-logo">S</div><div class="footer-brand-text">SAYRI PERU<br><span>Café para compartir</span></div><div class="footer-social"><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a><a href="https://www.YouTube.com/" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></div></div>
+      <div class="footer-col"><h2>Explora</h2><ul><li><a href="index.html">Inicio</a></li><li><a href="recetas.html">Recetas</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+      <div class="footer-col"><h2>Información</h2><ul><li>Política de privacidad</li><li>Política de cookies</li><li>Protección de datos</li><li>Proyecto académico</li></ul></div>
+      <div class="footer-col"><h2>Suscríbete</h2><p>Entérate de las novedades de SAYRI PERU.</p><form class="footer-subscribe-form" action="#"><input type="email" aria-label="Correo electrónico" placeholder="tuemail@correo.com" required><button type="submit" aria-label="Suscribirse">→</button></form></div>
+    </div>
+  </footer>
+  <script src="scripts/app.js" defer></script>
+</body>
+</html>
