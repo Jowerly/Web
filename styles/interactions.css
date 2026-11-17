@@ -1,0 +1,92 @@
+.form-status {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  color: #153b27;
+  background: #dff5e7;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.form-status[data-type="info"] {
+  color: #47320b;
+  background: #fff0c6;
+}
+
+.receta-card[role="button"] {
+  cursor: pointer;
+}
+
+.receta-card[role="button"]:focus-visible {
+  outline: 3px solid #d4a568;
+  outline-offset: 4px;
+}
+
+.recipe-dialog {
+  width: min(470px, calc(100% - 32px));
+  padding: 32px;
+  border: 0;
+  border-radius: 16px;
+  color: #251b16;
+  background: #fffaf2;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.38);
+}
+
+.recipe-dialog::backdrop {
+  background: rgba(10, 15, 18, 0.72);
+}
+
+.recipe-dialog-eyebrow {
+  margin-bottom: 8px;
+  color: #8a582d;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.recipe-dialog h2 {
+  margin: 0 34px 12px 0;
+  font-size: 2rem;
+}
+
+.recipe-dialog-description,
+.recipe-dialog-note {
+  line-height: 1.55;
+}
+
+.recipe-dialog-note {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #dec9ae;
+  color: #684b38;
+}
+
+.recipe-dialog-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  color: #fff;
+  background: #111820;
+  cursor: pointer;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.recipe-dialog-close:focus-visible,
+.footer-subscribe-form button:focus-visible,
+#boton:focus-visible {
+  outline: 3px solid #d4a568;
+  outline-offset: 3px;
+}
+
+@media (max-width: 520px) {
+  .recipe-dialog {
+    padding: 26px 20px;
+  }
+}

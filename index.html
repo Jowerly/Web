@@ -1,155 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Café Altomayo</title>
-<link rel="stylesheet" href="styles/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap" rel="stylesheet">
-    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <script src="https://kit.fontawesome.com/433f21479a.js" crossorigin="anonymous"></script>
-        <link rel="icon" type="image/x-icon" href="Assets/icons/favicon.ico">
-
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script></head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SAYRI PERU: café, recetas y momentos para compartir.">
+  <title>SAYRI PERU | Inicio</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/interactions.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/433f21479a.js" crossorigin="anonymous"></script></head>
 <body>
-    <header class="encabezado">
-        <nav class="menu">
-            <ul class="list_menu">        
-                <li class="list_item">
-                    <a href="index.html">
-                        <img src="Assets/logo.svg" alt="Logo" class="logo" />
-                    </a>
-                </li>
-                <li class="list_item"><a href="index.html">Inicio</a></li>
-                <li class="list_item"><a href="blog.html"><i class='bx  bxs-pencil' style='color:#ffffff'></i> Blog</a></li>
-                <li class="list_item"><a href="recetas.html"><i class='bx  bxs-coffee-beans' style='color:#ffffff'></i> Recetas</a></li>
-                <li class="list_item"><a href="videos.html"><i class='bx  bxs-video' style='color:#ffffff'></i> Comerciales</a></li>
-                <li class="list_item"><a href="contacto.html"><i class='bxr  bxs-envelope-alt'  style='color:#ffffff'></i></i>contacto</a></li>
-                <li class="list_item"><a href="nosotros.html"><i class='bxr  bxs-user-square'  style='color:#ffffff'></i>Nosotros</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-    <section class="hero-section">
-        <video id="fondo" src="Assets/Secuencia-01_1.mp4" autoplay loop muted playsinline></video>
-        <div id="cuadro" class="texto-hero">
-            <h2>BIENVENIDO<br>AL MUNDO<br>ALTOMAYO,</h2>
-            <p>Descubre aquí la magia del <br> sabor natural del café</p>
-        </div>
+  <header class="encabezado">
+    <nav class="menu" aria-label="Navegación principal">
+      <ul class="list_menu">
+        <li class="marca"><a href="index.html">SAYRI <span>PERU</span></a></li>
+        <li class="list_item"><a href="index.html" aria-current="page"><i class="fa-solid fa-house"></i>Inicio</a></li>
+        <li class="list_item"><a href="recetas.html"><i class="fa-solid fa-mug-hot"></i>Recetas</a></li>
+        <li class="list_item"><a href="contacto.html"><i class="fa-solid fa-envelope"></i>Contacto</a></li>
+      </ul>
+      <input class="menu-toggle" type="checkbox" id="menu-movil-toggle" aria-label="Abrir o cerrar el menú">
+      <label class="menu-toggle-button" for="menu-movil-toggle" aria-expanded="false"><span class="menu-icono" aria-hidden="true">☰</span></label>
+      <label class="menu-overlay" for="menu-movil-toggle" aria-hidden="true"></label>
+      <ul class="menu-movil-lista">
+        <li class="list_item"><a href="index.html" aria-current="page"><i class="fa-solid fa-house"></i>Inicio</a></li>
+        <li class="list_item"><a href="recetas.html"><i class="fa-solid fa-mug-hot"></i>Recetas</a></li>
+        <li class="list_item"><a href="contacto.html"><i class="fa-solid fa-envelope"></i>Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section" aria-labelledby="titulo-principal">
+      <img id="fondo" src="Assets/16-Tipos-de-cafe-en-grano_2-2048x1366.jpg.webp" alt="Granos de café tostado">
+      <div class="texto-hero">
+        <p class="eyebrow">Café para compartir</p>
+        <h1 id="titulo-principal">BIENVENIDO A<br>SAYRI PERU</h1>
+        <p>Una propuesta de café para acompañar pausas, ideas y conversaciones que se disfrutan sin prisa.</p>
+        <a class="cta" href="recetas.html">Ver recetas</a>
+      </div>
     </section>
- <section class="somos-altomayo">
-    <h2>SOMOS ALTOMAYO</h2>
-    <p>Producimos y exportamos el mejor café de Perú para el mundo desde 1998</p>
-    <div class="tazas-container">
-        <div class="taza">
-            <div class="taza-svg-contenedor">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-291.4 973.7 948.3 484.3">
-                <path d="M-291.4,973.7c252.5,0,504.2,0,756.5,0c0.8,29.7-1.8,59-5,88.2c8.8-4.7,17-9.8,25.7-13.7c58-25.5,127.1-2,157.2,53.3  c30.3,55.5,9.6,125.4-46.5,157.1c-60.4,34.1-135.3,13.2-169.3-47.1c-0.5-0.9-1-1.7-1.7-2.9c-4.6,11.1-8.7,21.9-13.4,32.6  c-25.7,59-59.8,112.4-105.9,157.7c-22.5,22.2-47.3,41.4-74.9,56.9c-2.3,1.3-5.3,2.1-7.9,2.1c-90.7,0.1-181.5,0.1-272.2,0  c-3,0-6.2-1.1-8.8-2.6c-51.1-29-92.1-69.1-126.1-116.7c-43.7-61.2-72-129.3-89.4-202.2c-12.3-51.5-18.3-103.8-18.3-156.8  C-291.4,977.9-291.4,976.1-291.4,973.7z M535.1,1216.7c34.3-0.1,62-27.3,61.9-60.6c-0.1-33.2-28.3-60.1-62.5-60  c-35.6,0.2-62.6,29.8-61.7,61.8C473.7,1189.9,501.5,1216.8,535.1,1216.7z" fill="0"></path></svg><path d="M-291.4,973.7c252.5,0,504.2,0,756.5,0c0.8,29.7-1.8,59-5,88.2c8.8-4.7,17-9.8,25.7-13.7c58-25.5,127.1-2,157.2,53.3  c30.3,55.5,9.6,125.4-46.5,157.1c-60.4,34.1-135.3,13.2-169.3-47.1c-0.5-0.9-1-1.7-1.7-2.9c-4.6,11.1-8.7,21.9-13.4,32.6  c-25.7,59-59.8,112.4-105.9,157.7c-22.5,22.2-47.3,41.4-74.9,56.9c-2.3,1.3-5.3,2.1-7.9,2.1c-90.7,0.1-181.5,0.1-272.2,0  c-3,0-6.2-1.1-8.8-2.6c-51.1-29-92.1-69.1-126.1-116.7c-43.7-61.2-72-129.3-89.4-202.2c-12.3-51.5-18.3-103.8-18.3-156.8  C-291.4,977.9-291.4,976.1-291.4,973.7z M535.1,1216.7c34.3-0.1,62-27.3,61.9-60.6c-0.1-33.2-28.3-60.1-62.5-60  c-35.6,0.2-62.6,29.8-61.7,61.8C473.7,1189.9,501.5,1216.8,535.1,1216.7z" fill="0"></path>    <circle cx="190" cy="90" r="18" fill="whie"/>
-            <circle cx="190" cy="90" r="10" fill="white"/>        
+
+    <section class="somos-sayri" aria-labelledby="proposito">
+      <h2 id="proposito">CONOCE SAYRI PERU</h2>
+      <p>Nos dirigimos a personas que disfrutan preparar café en casa y descubrir nuevas formas de compartirlo.</p>
+      <div class="tazas-container">
+        <article class="taza">
+          <div class="taza-svg-contenedor">
+            <svg class="taza-svg" viewBox="0 0 220 160" role="img" aria-label="Taza de café con aroma">
+              <path class="svg-steam" d="M75 50c-13-13 11-21 0-35M110 48c-13-13 11-21 0-35M145 50c-13-13 11-21 0-35"/>
+              <path class="svg-cup" d="M42 62h119v38c0 25-20 45-45 45H87c-25 0-45-20-45-45Z"/>
+              <path class="svg-handle" d="M161 77h17c18 0 28 12 28 28s-10 28-28 28h-15"/>
+              <ellipse class="svg-coffee" cx="102" cy="63" rx="59" ry="10"/>
+              <path class="svg-saucer" d="M40 151h136"/>
             </svg>
-                <div class="texto-taza">
-                    Café 100%<br>
-                    Arábica, con<br>
-                    sabor y aroma<br>
-                    intenso
-                </div>
-            </div>
-        </div>
-        <div class="taza">
-            <div class="taza-svg-contenedor">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-291.4 973.7 948.3 484.3">
-                <path d="M-291.4,973.7c252.5,0,504.2,0,756.5,0c0.8,29.7-1.8,59-5,88.2c8.8-4.7,17-9.8,25.7-13.7c58-25.5,127.1-2,157.2,53.3  c30.3,55.5,9.6,125.4-46.5,157.1c-60.4,34.1-135.3,13.2-169.3-47.1c-0.5-0.9-1-1.7-1.7-2.9c-4.6,11.1-8.7,21.9-13.4,32.6  c-25.7,59-59.8,112.4-105.9,157.7c-22.5,22.2-47.3,41.4-74.9,56.9c-2.3,1.3-5.3,2.1-7.9,2.1c-90.7,0.1-181.5,0.1-272.2,0  c-3,0-6.2-1.1-8.8-2.6c-51.1-29-92.1-69.1-126.1-116.7c-43.7-61.2-72-129.3-89.4-202.2c-12.3-51.5-18.3-103.8-18.3-156.8  C-291.4,977.9-291.4,976.1-291.4,973.7z M535.1,1216.7c34.3-0.1,62-27.3,61.9-60.6c-0.1-33.2-28.3-60.1-62.5-60  c-35.6,0.2-62.6,29.8-61.7,61.8C473.7,1189.9,501.5,1216.8,535.1,1216.7z" fill="0"></path></svg><path d="M-291.4,973.7c252.5,0,504.2,0,756.5,0c0.8,29.7-1.8,59-5,88.2c8.8-4.7,17-9.8,25.7-13.7c58-25.5,127.1-2,157.2,53.3  c30.3,55.5,9.6,125.4-46.5,157.1c-60.4,34.1-135.3,13.2-169.3-47.1c-0.5-0.9-1-1.7-1.7-2.9c-4.6,11.1-8.7,21.9-13.4,32.6  c-25.7,59-59.8,112.4-105.9,157.7c-22.5,22.2-47.3,41.4-74.9,56.9c-2.3,1.3-5.3,2.1-7.9,2.1c-90.7,0.1-181.5,0.1-272.2,0  c-3,0-6.2-1.1-8.8-2.6c-51.1-29-92.1-69.1-126.1-116.7c-43.7-61.2-72-129.3-89.4-202.2c-12.3-51.5-18.3-103.8-18.3-156.8  C-291.4,977.9-291.4,976.1-291.4,973.7z M535.1,1216.7c34.3-0.1,62-27.3,61.9-60.6c-0.1-33.2-28.3-60.1-62.5-60  c-35.6,0.2-62.6,29.8-61.7,61.8C473.7,1189.9,501.5,1216.8,535.1,1216.7z" fill="0"></path>    <circle cx="190" cy="90" r="18" fill="whie"/>
-            <circle cx="190" cy="90" r="10" fill="white"/>        
+          </div>
+          <h3>Sabor y aroma</h3>
+          <p>Momentos simples que se sienten especiales.</p>
+        </article>
+        <article class="taza">
+          <div class="taza-svg-contenedor">
+            <svg class="taza-svg" viewBox="0 0 220 160" role="img" aria-label="Taza de café y una cuchara">
+              <path class="svg-steam" d="M86 50c-13-13 11-21 0-35M121 48c-13-13 11-21 0-35"/>
+              <path class="svg-cup" d="M42 62h119v38c0 25-20 45-45 45H87c-25 0-45-20-45-45Z"/>
+              <path class="svg-handle" d="M161 77h17c18 0 28 12 28 28s-10 28-28 28h-15"/>
+              <ellipse class="svg-coffee" cx="102" cy="63" rx="59" ry="10"/>
+              <path class="svg-saucer" d="M40 151h136"/>
+              <path class="svg-accent" d="m26 45 24 25M24 42l5-5M45 72l5-5"/>
             </svg>
-                <div class="texto-taza">
-                    Cuidamos el
-                    proceso desde el
-                    grano hasta brla taza
-                </div>
-            </div>
-        </div>
-        <div class="taza">
-            <div class="taza-svg-contenedor">
-               <svg xmlns="http://www.w3.org/2000/svg" viewBox="-291.4 973.7 948.3 484.3">
-                <path d="M-291.4,973.7c252.5,0,504.2,0,756.5,0c0.8,29.7-1.8,59-5,88.2c8.8-4.7,17-9.8,25.7-13.7c58-25.5,127.1-2,157.2,53.3  c30.3,55.5,9.6,125.4-46.5,157.1c-60.4,34.1-135.3,13.2-169.3-47.1c-0.5-0.9-1-1.7-1.7-2.9c-4.6,11.1-8.7,21.9-13.4,32.6  c-25.7,59-59.8,112.4-105.9,157.7c-22.5,22.2-47.3,41.4-74.9,56.9c-2.3,1.3-5.3,2.1-7.9,2.1c-90.7,0.1-181.5,0.1-272.2,0  c-3,0-6.2-1.1-8.8-2.6c-51.1-29-92.1-69.1-126.1-116.7c-43.7-61.2-72-129.3-89.4-202.2c-12.3-51.5-18.3-103.8-18.3-156.8  C-291.4,977.9-291.4,976.1-291.4,973.7z M535.1,1216.7c34.3-0.1,62-27.3,61.9-60.6c-0.1-33.2-28.3-60.1-62.5-60  c-35.6,0.2-62.6,29.8-61.7,61.8C473.7,1189.9,501.5,1216.8,535.1,1216.7z" fill="0"></path></svg><path d="M-291.4,973.7c252.5,0,504.2,0,756.5,0c0.8,29.7-1.8,59-5,88.2c8.8-4.7,17-9.8,25.7-13.7c58-25.5,127.1-2,157.2,53.3  c30.3,55.5,9.6,125.4-46.5,157.1c-60.4,34.1-135.3,13.2-169.3-47.1c-0.5-0.9-1-1.7-1.7-2.9c-4.6,11.1-8.7,21.9-13.4,32.6  c-25.7,59-59.8,112.4-105.9,157.7c-22.5,22.2-47.3,41.4-74.9,56.9c-2.3,1.3-5.3,2.1-7.9,2.1c-90.7,0.1-181.5,0.1-272.2,0  c-3,0-6.2-1.1-8.8-2.6c-51.1-29-92.1-69.1-126.1-116.7c-43.7-61.2-72-129.3-89.4-202.2c-12.3-51.5-18.3-103.8-18.3-156.8  C-291.4,977.9-291.4,976.1-291.4,973.7z M535.1,1216.7c34.3-0.1,62-27.3,61.9-60.6c-0.1-33.2-28.3-60.1-62.5-60  c-35.6,0.2-62.6,29.8-61.7,61.8C473.7,1189.9,501.5,1216.8,535.1,1216.7z" fill="0"></path>    <circle cx="190" cy="90" r="18" fill="whie"/>
-            <circle cx="190" cy="90" r="10" fill="white"/>        
+          </div>
+          <h3>Recetas fáciles</h3>
+          <p>Ideas claras para crear una taza a tu manera.</p>
+        </article>
+        <article class="taza">
+          <div class="taza-svg-contenedor">
+            <svg class="taza-svg" viewBox="0 0 220 160" role="img" aria-label="Dos tazas de café para compartir">
+              <path class="svg-steam" d="M70 58c-10-10 8-16 0-27M143 58c-10-10 8-16 0-27"/>
+              <path class="svg-cup" d="M23 70h73v24c0 18-14 32-32 32H55c-18 0-32-14-32-32Z"/>
+              <path class="svg-handle" d="M96 79h10c13 0 20 9 20 20s-7 20-20 20H96"/>
+              <ellipse class="svg-coffee" cx="59" cy="71" rx="36" ry="7"/>
+              <path class="svg-cup" d="M118 70h73v24c0 18-14 32-32 32h-9c-18 0-32-14-32-32Z"/>
+              <path class="svg-handle" d="M191 79h8c13 0 19 9 19 20s-6 20-19 20h-8"/>
+              <ellipse class="svg-coffee" cx="154" cy="71" rx="36" ry="7"/>
+              <path class="svg-saucer" d="M17 142h185"/>
             </svg>
-                <div class="texto-taza">
-                    Presencia en<br>
-                    todas las regiones<br>
-                    productoras de café
-                </div>
-            </div>
-        </div>
-        <div class="taza">
-            <div class="taza-svg-contenedor">
-             <svg xmlns="http://www.w3.org/2000/svg" viewBox="-291.4 973.7 948.3 484.3">
-                <path d="M-291.4,973.7c252.5,0,504.2,0,756.5,0c0.8,29.7-1.8,59-5,88.2c8.8-4.7,17-9.8,25.7-13.7c58-25.5,127.1-2,157.2,53.3  c30.3,55.5,9.6,125.4-46.5,157.1c-60.4,34.1-135.3,13.2-169.3-47.1c-0.5-0.9-1-1.7-1.7-2.9c-4.6,11.1-8.7,21.9-13.4,32.6  c-25.7,59-59.8,112.4-105.9,157.7c-22.5,22.2-47.3,41.4-74.9,56.9c-2.3,1.3-5.3,2.1-7.9,2.1c-90.7,0.1-181.5,0.1-272.2,0  c-3,0-6.2-1.1-8.8-2.6c-51.1-29-92.1-69.1-126.1-116.7c-43.7-61.2-72-129.3-89.4-202.2c-12.3-51.5-18.3-103.8-18.3-156.8  C-291.4,977.9-291.4,976.1-291.4,973.7z M535.1,1216.7c34.3-0.1,62-27.3,61.9-60.6c-0.1-33.2-28.3-60.1-62.5-60  c-35.6,0.2-62.6,29.8-61.7,61.8C473.7,1189.9,501.5,1216.8,535.1,1216.7z" fill="0"></path></svg><path d="M-291.4,973.7c252.5,0,504.2,0,756.5,0c0.8,29.7-1.8,59-5,88.2c8.8-4.7,17-9.8,25.7-13.7c58-25.5,127.1-2,157.2,53.3  c30.3,55.5,9.6,125.4-46.5,157.1c-60.4,34.1-135.3,13.2-169.3-47.1c-0.5-0.9-1-1.7-1.7-2.9c-4.6,11.1-8.7,21.9-13.4,32.6  c-25.7,59-59.8,112.4-105.9,157.7c-22.5,22.2-47.3,41.4-74.9,56.9c-2.3,1.3-5.3,2.1-7.9,2.1c-90.7,0.1-181.5,0.1-272.2,0  c-3,0-6.2-1.1-8.8-2.6c-51.1-29-92.1-69.1-126.1-116.7c-43.7-61.2-72-129.3-89.4-202.2c-12.3-51.5-18.3-103.8-18.3-156.8  C-291.4,977.9-291.4,976.1-291.4,973.7z M535.1,1216.7c34.3-0.1,62-27.3,61.9-60.6c-0.1-33.2-28.3-60.1-62.5-60  c-35.6,0.2-62.6,29.8-61.7,61.8C473.7,1189.9,501.5,1216.8,535.1,1216.7z" fill="0"></path>    <circle cx="190" cy="90" r="18" fill="whie"/>
-            <circle cx="190" cy="90" r="10" fill="white"/>        
+          </div>
+          <h3>Para compartir</h3>
+          <p>Una pausa que acerca a amigos y familia.</p>
+        </article>
+        <article class="taza">
+          <div class="taza-svg-contenedor">
+            <svg class="taza-svg" viewBox="0 0 220 160" role="img" aria-label="Taza de café con una hoja">
+              <path class="svg-steam" d="M75 50c-13-13 11-21 0-35M110 48c-13-13 11-21 0-35M145 50c-13-13 11-21 0-35"/>
+              <path class="svg-cup" d="M42 62h119v38c0 25-20 45-45 45H87c-25 0-45-20-45-45Z"/>
+              <path class="svg-handle" d="M161 77h17c18 0 28 12 28 28s-10 28-28 28h-15"/>
+              <ellipse class="svg-coffee" cx="102" cy="63" rx="59" ry="10"/>
+              <path class="svg-saucer" d="M40 151h136"/>
+              <path class="svg-accent" d="M22 83c15-18 31-16 34-3-3 14-19 17-34 3Zm4-1 25-1"/>
             </svg>
-                <div class="texto-taza">
-                    Tecnología de
-                    punta que protege
-                    aromas y atributos
-                    del café
-                </div>
-            </div>
-        </div>
-    </div>
- </section>
-<section class="productos">
-    <div class="productos-overlay">
+          </div>
+          <h3>Con identidad</h3>
+          <p>Una experiencia cálida inspirada en el Perú.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="productos" aria-labelledby="experiencia">
+      <video class="producto-video" src="Assets/Secuencia-01_1.mp4" autoplay loop muted playsinline preload="auto" aria-hidden="true"></video>
+      <div class="productos-overlay">
         <div class="overlay-texto">
-            <h3>La naturaleza nos inspira</h3>
-        <a  href="blog.html"><button class="button">Conócenos</button></a>
-    </div>
-</section>
-</section>
-</main>
-<footer class="footer-altomayo">
-  <div class="footer-content">
-    <div class="footer-col footer-brand">
-      <img src="Assets/logo.svg" alt="Altomayo Logo" class="footer-logo"/>
-      <div class="footer-brand-text">El sabor natural del café</div>
-      <div class="footer-social">
-        <a href="https://www.facebook.com/altomayo.oficial/" aria-label="Facebook"><i class="icon-facebook"></i></a>
-        <a href="https://www.instagram.com/altomayo.oficial/" aria-label="Instagram"><i class="icon-instagram"></i></a>
-        <a href="https://www.tiktok.com/@altomayo.oficial" aria-label="TikTok"><i class="icon-tiktok"></i></a>
-        <a href="https://www.youtube.com/@altomayo.oficial" aria-label="YouTube"><i class="icon-youtube"></i></a>
+          <p class="eyebrow">Nuestra propuesta</p>
+          <h2 id="experiencia">Un café, muchas formas de disfrutarlo</h2>
+          <p>Explora recetas, combina sabores y encuentra un momento para ti.</p>
+          <a href="recetas.html" class="button">Explorar recetas</a>
+        </div>
       </div>
+    </section>
+  </main>
+
+  <footer class="footer-sayri">
+    <div class="footer-content">
+      <div class="footer-col footer-brand"><div class="footer-logo">S</div><div class="footer-brand-text">SAYRI PERU<br><span>Café para compartir</span></div><div class="footer-social"><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a><a href="https://www.YouTube.com/" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></div></div>
+      <div class="footer-col"><h2>Explora</h2><ul><li><a href="index.html">Inicio</a></li><li><a href="recetas.html">Recetas</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+      <div class="footer-col"><h2>Información</h2><ul><li>Política de privacidad</li><li>Política de cookies</li><li>Protección de datos</li><li>Proyecto académico</li></ul></div>
+      <div class="footer-col"><h2>Suscríbete</h2><p>Entérate de las novedades de SAYRI PERU.</p><form class="footer-subscribe-form" action="#"><input type="email" aria-label="Correo electrónico" placeholder="tuemail@correo.com" required><button type="submit" aria-label="Suscribirse">→</button></form></div>
     </div>
-    <div class="footer-col">
-      <h4>Explorar</h4>
-      <ul>
-        <li><span class="icon-coffee"></span> Somos Altomayo</li>
-        <li><span class="icon-coffee"></span> Tu negocio con Altomayo</li>
-        <li><span class="icon-coffee"></span> Recetas</li>
-        <li><span class="icon-coffee"></span> Blog</li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Links</h4>
-      <ul>
-        <li><span class="icon-coffee"></span> Políticas de Privacidad</li>
-        <li><span class="icon-coffee"></span> Políticas de Cookies</li>
-        <li><span class="icon-coffee"></span> Políticas de Protección de Datos</li>
-        <li><span class="icon-coffee"></span> Manual de Derechos</li>
-        <li><span class="icon-coffee"></span> Libro de Reclamaciones</li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Suscríbete</h4>
-      <div class="footer-subscribe-text">
-        Entérate de las novedades en tu email
-      </div>
-      <form class="footer-subscribe-form">
-        <input type="email" placeholder="joseluisfloresapara@gmail.com" />
-        <button type="submit" aria-label="Enviar"><i class="icon-mail"></i></button>
-      </form>
-    </div>
-  </div>
-</footer>
+  </footer>
+  <script src="scripts/app.js" defer></script>
 </body>
 </html>
